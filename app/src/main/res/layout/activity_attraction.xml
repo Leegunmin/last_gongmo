@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="missingPrefix"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+
+        android:orientation="vertical">
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:paddingTop="20dp"
+            android:drawableTop="@drawable/bill"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/buttonbackground5"
+            android:text="뉴스"
+            android:textStyle="bold"
+            app:font="custom2"
+            android:textSize="30dp"
+            android:id="@+id/button"/>
+        <Button
+            android:layout_marginTop="5dp"
+            android:layout_width="140dp"
+            android:layout_weight="1"
+            android:layout_height="140dp"
+            android:paddingTop="20dp"
+            android:drawableTop="@drawable/bookshelf"
+            android:layout_marginRight="5dp"
+            app:font="custom2"
+            android:background="@drawable/buttonbackground5"
+            android:text="웹툰"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:id="@+id/button2"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

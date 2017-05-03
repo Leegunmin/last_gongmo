@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="missingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#fff1b9"
+    tools:context="com.example.leegunmin.agoto.MaintoOther.information.technic">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/technic_background"
+
+        android:elevation="20dp"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="대분류 : "
+            app:font="custom2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor ="#8b8687"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/big_spinner"
+
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/technic_background"
+        android:elevation="20dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="중분류 : "
+            app:font="custom2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+
+            android:textColor ="#8b8687"/>
+    <Spinner
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/mid_spinner" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/technic_background"
+        android:elevation="20dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="소분류 : "
+            app:font="custom2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor ="#8b8687"/>
+        <Spinner
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/small_spinner" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/technic_background"
+        android:elevation="20dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="기술 대분류 : "
+            app:font="custom2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor ="#8b8687"/>
+        <Spinner
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/big_tech_spinner" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:elevation = "10dp"
+        >
+    <ListView
+        android:id="@+id/listviewing"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+
+        ></ListView>
+        </LinearLayout>
+
+</LinearLayout>

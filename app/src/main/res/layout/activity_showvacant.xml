@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="missingPrefix"
+    android:layout_width="300dp"
+    android:layout_height="450dp"
+    android:background="#FFFFFF"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true"
+    android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/image_dial"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/korea"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_marginBottom="3dp"
+            android:textColor="#000000"
+            android:id="@+id/cityname"
+            app:font = "custom2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="시도명"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:textColor="#000000"
+            android:layout_marginBottom="3dp"
+            app:font = "custom2"
+            android:id="@+id/full_city_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="도시명: "
+            android:layout_below="@+id/cityname"
+            android:layout_alignLeft="@+id/image_dial" />
+
+        <TextView
+            android:textColor="#000000"
+            android:layout_marginBottom="3dp"
+            app:font = "custom2"
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="협의가: "
+            android:layout_below="@+id/full_city_name"
+            android:layout_alignLeft="@+id/image_dial" />
+        <LinearLayout
+            android:gravity="bottom"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <Button
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginBottom="3dp"
+                    app:font = "custom2"
+                    android:id="@+id/close_dial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전화"
+                    />
+                <Button
+                    android:id="@+id/phone_dial"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    app:font = "custom2"
+                    android:layout_height="wrap_content"
+                    android:text="닫기"
+                    android:layout_gravity="bottom" />
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/build_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="건축년도: "
+            android:layout_marginBottom="3dp"
+            app:font = "custom2"
+            android:layout_below="@+id/price"
+            android:layout_alignStart="@+id/image_dial" />
+
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/vacant_year"
+            android:layout_marginBottom="3dp"
+            app:font = "custom2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="빈집 발생년도: "
+            android:layout_below="@+id/build_year"
+            android:layout_alignLeft="@+id/image_dial" />
+
+        <TextView
+            android:textColor="#000000"
+            android:layout_marginBottom="3dp"
+            app:font = "custom2"
+            android:id="@+id/ownner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="소유자: "
+            android:layout_below="@+id/vacant_year"
+            android:layout_alignLeft="@+id/image_dial" />
+
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="3dp"
+            app:font = "custom2"
+            android:layout_height="wrap_content"
+            android:text="전화번호: "
+            android:layout_below="@+id/ownner"
+
+            android:layout_alignLeft="@+id/image_dial" />
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/field_size"
+            android:layout_marginBottom="3dp"
+            app:font = "custom2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="대지면적: "
+            android:layout_below="@+id/phone_number"
+            android:layout_alignLeft="@+id/image_dial" />
+
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/build_size"
+            android:layout_marginBottom="3dp"
+            app:font = "custom2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="건축면적: "
+            android:layout_below="@+id/field_size"
+            android:layout_alignLeft="@+id/image_dial" />
+
+
+
+</RelativeLayout>

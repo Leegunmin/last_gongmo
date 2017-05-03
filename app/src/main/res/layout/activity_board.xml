@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="missingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/reg_board"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="@drawable/buttonbackground_close"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:text="등록 / 갱신"
+            app:font = "custom2"
+            android:textStyle ="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="380dp"
+        android:layout_height="550dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="선생님"
+            app:font = "custom2"
+            android:textColor = "#000000"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            app:font = "custom2"
+            android:layout_marginTop="5dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonbackground_close"
+        android:text="@string/btn_logout"
+        android:textStyle ="bold"
+        app:font = "custom2"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="65dp"
+        app:font = "custom2"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonbackground_close"
+        android:text="Setting"
+        android:textStyle ="bold"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_toStartOf="@+id/linearLayout" />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:ignore="missingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.leegunmin.agoto.MaintoOther.information.video"
+    android:weightSum="1"
+    android:background="#fff1b9">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/videoedit"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            app:font="custom2"
+            android:textColor="#000000"
+            android:textSize= "30dp"/>
+        <Button
+            android:id="@+id/videobutton"
+
+            android:background="@drawable/buttonbackground_term"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            app:font="custom2"
+            android:textSize="30dp"
+            android:text="검색"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.51"
+        android:background="#ffffff"
+        />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/videoback"
+            android:layout_marginRight="10dp"
+            android:text="뒤로"
+            app:font="custom2"
+            android:textSize="30dp"
+            android:background="@drawable/buttonbackground_term"
+            android:layout_width="60dp"
+            android:layout_height="40dp"/>
+        <Button
+            android:id="@+id/videogo"
+            android:layout_marginLeft="10dp"
+            app:font="custom2"
+            android:textSize="30dp"
+            android:background="@drawable/buttonbackground_term"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="다음"/>
+    </LinearLayout>
+
+</LinearLayout>

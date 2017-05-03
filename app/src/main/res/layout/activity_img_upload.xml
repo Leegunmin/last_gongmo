@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#ffffff">
+
+
+        <TextView
+            android:text="업로드"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ImageUpload_title"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal|bold"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:id="@+id/img"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:layout_marginBottom="10dp">
+        <ImageButton
+            android:layout_height="40dp"
+
+            android:id="@+id/selimg"
+            android:layout_width="40dp"
+            android:background="#ffffff"
+            android:src="@drawable/korea"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:id="@+id/uploadimg"
+            android:background="#ffffff"
+            android:src="@drawable/russia"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:id="@+id/img_delete"
+            android:background="#ffffff"
+            android:src="@drawable/italy"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
